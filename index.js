@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 var scraper = require('table-scraper');
-
+const port = process.env.PORT || 3000;
 app.get('/covid19-ap-dist', (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     const url = 'http://hmfw.ap.gov.in/covid_dashboard.aspx';
@@ -13,5 +13,5 @@ app.get('/covid19-ap-dist', (req, res) => {
   
 })
 
-app.listen(9000);
+app.listen(port);
 console.log('server started')
