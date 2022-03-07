@@ -1,3 +1,5 @@
+This repo is not actively being maintained.
+
 <h1 align="center">
     Coronavirus district wise status API - Andhra Pradesh
 </h1>
